@@ -3,9 +3,11 @@ import React from 'react';
 
 function InfoWindow(props) {
   return (
-    <div style={{fontWeight:"bold"}}>
-      City : {props.city} <br></br>
-      Cases : {props.cases}
+    <div style={{fontWeight:"bold",fontSize:"1rem"}}>
+      Location : {props.region.loc} <br></br>
+      Total Confirmed Cases : {props.region.totalConfirmed}<br></br>
+      Discharged : {props.region.discharged}<br></br>
+      Deaths : {props.region.deaths}
     </div>
   );
 }
